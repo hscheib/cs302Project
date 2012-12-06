@@ -1,0 +1,1 @@
+this is a readme for cs302 project
