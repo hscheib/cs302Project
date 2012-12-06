@@ -1,1 +1,1 @@
-this is a readme for cs302 project
+README FOR CS302 PROJECT
