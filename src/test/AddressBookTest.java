@@ -98,37 +98,36 @@ public class AddressBookTest {
 			fail("Should not throw exception");
 		}
 
-		Person p2 = ab.findPersonByName(p);
+		Person p2 = ab.findPerson(p);
 
 		assertEquals("Bob", p2.getFirstName());
 		assertEquals("Smith", p2.getLastName());
 
 	}
-	
+
 	@Test
 	public void updatePersonAddress() {
 		AddressBook ab = new AddressBook();
 
 		Person p = getTestPerson();
-		
+
 		assertEquals("123 Danger Dr", p.getAddress());
-		
+
 		try {
 			ab.addPerson(p);
 		} catch (Exception e) {
 			fail("Should not throw exception");
 		}
-		
-		Person p2 = ab.findPersonByName(p);
+
+		Person p2 = ab.findPerson(p);
 		p2.setAddress("321 Easy St");
-		
+
 		ab.updatePerson(p2);
-		
-		Person p3 = ab.findPersonByName(p);
+
+		Person p3 = ab.findPerson(p);
 		assertEquals("321 Easy St", p3.getAddress());
-		
+
 	}
-	
 
 	private Person getTestPerson() {
 		Person p = null;

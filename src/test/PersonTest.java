@@ -1,4 +1,5 @@
 package test;
+
 import static org.junit.Assert.*;
 import src.Person;
 
@@ -69,7 +70,7 @@ public class PersonTest {
 		assertEquals(p.getAddress(), "321 Easy St");
 
 	}
-	
+
 	@Test
 	public void changePersonCity() {
 		Person p = getTestPerson();
@@ -81,7 +82,7 @@ public class PersonTest {
 		assertEquals(p.getCity(), "Chicago");
 
 	}
-	
+
 	@Test
 	public void changePersonState() {
 		Person p = getTestPerson();
@@ -93,7 +94,7 @@ public class PersonTest {
 		assertEquals(p.getState(), "IL");
 
 	}
-	
+
 	@Test
 	public void changePersonZip() {
 		Person p = getTestPerson();
@@ -105,7 +106,7 @@ public class PersonTest {
 		assertEquals(p.getZip(), "33333");
 
 	}
-	
+
 	@Test
 	public void changePersonPhoneNumber() {
 		Person p = getTestPerson();
@@ -120,7 +121,7 @@ public class PersonTest {
 
 	private Person getTestPerson() {
 		Person p = null;
-		
+
 		try {
 			p = new Person("Bob", "Smith", "123 Danger Dr", "Rolla", "MO", "65401", "1234567890");
 		} catch (Exception e) {

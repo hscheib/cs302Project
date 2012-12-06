@@ -1,5 +1,11 @@
 package src;
 
+/**
+ * Person class. It holds basic information about a person.
+ * 
+ * @author Hunter
+ * 
+ */
 public class Person {
 
 	private String firstName;
@@ -10,16 +16,35 @@ public class Person {
 	private String zip;
 	private String phoneNumber;
 
+	/**
+	 * Constructor
+	 * 
+	 * @param first
+	 * @param last
+	 * @throws Exception
+	 */
 	public Person(String first, String last) throws Exception {
-		if(first == null || last ==null){
+		if (first == null || last == null) {
 			throw new Exception();
 		}
 		this.firstName = first;
 		this.lastName = last;
 	}
 
+	/**
+	 * Constructor with more parameters
+	 * 
+	 * @param first
+	 * @param last
+	 * @param addr
+	 * @param city
+	 * @param state
+	 * @param zip
+	 * @param phoneNo
+	 * @throws Exception
+	 */
 	public Person(String first, String last, String addr, String city, String state, String zip, String phoneNo) throws Exception {
-		if(first == null || last ==null){
+		if (first == null || last == null) {
 			throw new Exception();
 		}
 		this.firstName = first;
